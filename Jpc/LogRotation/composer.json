@@ -1,0 +1,26 @@
+{
+    "name": "jpc/module-logrotation",
+    "description": "This module will regulate logs on var/logs",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "info@mage2gen.com",
+            "name": "Mage2Gen"
+        },
+        {
+            "email": "johnperri.cruz@acidgreen.com.au",
+            "name": "John Perri Cruz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Jpc\\LogRotation\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
