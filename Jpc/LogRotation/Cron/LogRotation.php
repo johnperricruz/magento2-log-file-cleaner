@@ -44,10 +44,10 @@ class LogRotation{
             die($e->getMessage());
         }
 
-        $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/Acidgreen_LogRotation.log');
+        $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/Jpc_LogRotation.log');
         $logger = new \Zend\Log\Logger();
         $logger->addWriter($writer);
 
-        $logger->info("Cronjob LogRotation is executed : ".$backupLog);
+        $logger->info("Cronjob LogRotation was executed : ".$backupLog);
     }
 }
